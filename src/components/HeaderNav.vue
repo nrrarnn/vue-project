@@ -1,12 +1,12 @@
 <script setup>
-
+  const id = 1
 </script>
 
 <template>
   <nav>
     <h1>Example</h1>
     <ul>
-      <li>
+      <li :id>
         Home
       </li>
       <li>
