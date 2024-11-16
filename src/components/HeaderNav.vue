@@ -1,16 +1,13 @@
 <script setup>
-  const id = 1
+  const links = ['Home', 'About', 'Contact']
 </script>
 
 <template>
   <nav>
     <h1>Example</h1>
     <ul>
-      <li :id>
-        Home
-      </li>
-      <li>
-        About
+      <li v-for="link in links" :key="link">
+        <a :href="`#${link}`" class="link">{{ link }}</a>
       </li>
     </ul>
   </nav>
@@ -31,5 +28,8 @@
   h1 {
     font-family: 'Courier New', Courier, monospace;
     font-size: 3rem;
+  }
+  .link {
+    text-decoration: none;
   }
 </style>
