@@ -8,6 +8,7 @@ import { ref } from 'vue';
     console.log(userInput.value)
   }
 
+  const hobbies = ref([])
   const add = () => {
     count.value++
   }
@@ -21,6 +22,10 @@ import { ref } from 'vue';
     <button @click="count--"> - </button>
     <input type="text" v-model="userInput" placeholder="Enter text">
     <h1>{{ userInput }}</h1>
+    <br>
+    <label >Food</label>
+    <input type="checkbox" value="food" v-model="hobbies">
+    <div>{{ hobbies }}</div>
   </div>
 </template>
 
