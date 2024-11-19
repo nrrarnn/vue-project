@@ -4,12 +4,13 @@
 
 <template>
   <nav>
-    <h1>Example</h1>
+    <!-- <h1>Example</h1>
     <ul>
       <li v-for="link in links" :key="link">
         <a :href="`#${link}`" class="link">{{ link }}</a>
       </li>
-    </ul>
+    </ul> -->
+    <h1 class="font-bold font-mono">To Do List App</h1>
   </nav>
 </template>
 
@@ -26,7 +27,7 @@
     align-items: center;
   }
   h1 {
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Sans', sans-serif;
     font-size: 3rem;
   }
   .link {
